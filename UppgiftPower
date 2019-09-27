@@ -1,0 +1,27 @@
+using System;
+
+namespace UppgiftPower
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float a = 10;
+            int b = 3;
+            Console.WriteLine(a + " upphöjt med " + b + " = " + Power(a, b));
+
+
+        }
+
+        static double Power(float bas, int exp)
+        {
+            double prod = 1;
+            for (int i = 0; i < exp; i++)
+            {
+                prod *= bas; //prod=prod*bas
+            }
+
+            return prod;
+        }
+    }
+}
